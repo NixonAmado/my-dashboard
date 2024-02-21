@@ -1,7 +1,7 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter, withViewTransitions } from '@angular/router';
-
 import { routes } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -9,7 +9,9 @@ export const appConfig: ApplicationConfig = {
       routes,
       withViewTransitions({
         skipInitialTransition: true,
-        
       }),
-      )]
+      ),
+    importProvidersFrom( // modulos globales en este caso para el uso con Servicios
+      HttpClientModule
+    )]
 };
