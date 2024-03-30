@@ -1,0 +1,5 @@
+import{a as x}from"./chunk-UDYFO6R5.js";import{$a as n,Aa as g,Ba as h,Nb as k,Ob as y,T as u,Va as A,a as d,ab as i,b as f,bb as S,jb as e,lb as p,ob as w,rb as l,sb as c,va as s}from"./chunk-VC7UGAQB.js";var T=(()=>{let t=class t{constructor(){this.currentFramework=g(()=>`Change detection - ${this.frameworkAsSignal().name}`),this.frameworkAsSignal=h({name:"Angular",releaseData:2016}),this.frameworkAsProperty={name:"Angular",releaseData:2016},setTimeout(()=>{this.frameworkAsSignal.update(o=>f(d({},o),{name:"React"})),console.log("Hecho")},3e3)}};t.\u0275fac=function(a){return new(a||t)},t.\u0275cmp=u({type:t,selectors:[["ng-component"]],standalone:!0,features:[w],decls:13,vars:7,consts:[[3,"title"]],template:function(a,m){a&1&&(S(0,"app-title",0),n(1,"pre"),e(2,"    "),n(3,"h3"),e(4,"As signal"),i(),e(5),l(6,"json"),i(),n(7,"pre"),e(8,"    "),n(9,"h3"),e(10,"As Property"),i(),e(11),l(12,"json"),i()),a&2&&(A("title",m.currentFramework()),s(5),p(`
+    `,c(6,3,m.frameworkAsSignal()),`
+  `),s(6),p(`
+    `,c(12,5,m.frameworkAsProperty),`
+  `))},dependencies:[y,k,x],encapsulation:2,changeDetection:0});let r=t;return r})();export{T as default};
