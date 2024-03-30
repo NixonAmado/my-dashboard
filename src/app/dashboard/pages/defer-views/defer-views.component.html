@@ -6,8 +6,8 @@
     <app-heavy-loaders-slow cssClass= "bg-blue-500"></app-heavy-loaders-slow>
 
   }@placeholder {
-    <p class="h-[100vh] w-full bg-gradient-to-r from-gray-200 to-gray-400 animate-pulse">
-    console.log("cargando...")
+    <p class="h-[80vh] w-full bg-gradient-to-r from-gray-200 to-gray-400 animate-pulse">
+    console.log("Defer loading...")
   </p>
   }
 
@@ -15,17 +15,17 @@
     <app-heavy-loaders-slow cssClass= "bg-red-500"></app-heavy-loaders-slow>
 
   }@placeholder {
-    <p class="h-[100vh] w-full bg-gradient-to-r from-gray-500 to-gray-100 animate-pulse">
-    console.log("cargando...")
+    <p class="h-[80vh] w-full bg-gradient-to-r from-gray-500 to-gray-100 animate-pulse">
+    console.log("On idle Defer loading...")
   </p>
   }
-<!-- cargará cunado se muestre en el viewport de la pantalla -->
+<!-- cargará cuando se muestre en el viewport de la pantalla -->
   @defer (on viewport) {
     <app-heavy-loaders-slow cssClass= "bg-yellow-500"></app-heavy-loaders-slow>
 
   }@placeholder {
     <p class="h-[100vh] w-full bg-gradient-to-r from-black-200 to-gray-400 animate-pulse">
-    console.log("cargando...")
+    console.log("On Viewport Defer loading...")
   </p>
   }
 </section>

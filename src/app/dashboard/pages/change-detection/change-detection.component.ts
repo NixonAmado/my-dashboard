@@ -9,8 +9,14 @@ import { TitleComponent } from '@shared/title/title.component';
 
   template: `
   <app-title [title]="currentFramework()"></app-title>
-  <pre>{{ frameworkAsSignal() | json }}</pre>
-  <pre>{{ frameworkAsProperty | json }}</pre>
+  <pre>
+    <h3>As signal</h3>
+    {{ frameworkAsSignal() | json }}
+  </pre>
+  <pre>
+    <h3>As Property</h3>
+    {{ frameworkAsProperty | json }}
+  </pre>
 
   `
 })

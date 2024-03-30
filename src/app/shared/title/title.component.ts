@@ -7,11 +7,11 @@ import { Component, Input, booleanAttribute } from '@angular/core';
   imports: [CommonModule],
   template: `
   <h1 class="text-center text-3xl mb-5 bg-slate-400">
-   {{title}} - {{withShadow}}
-    </h1> 
+   {{title}} - (dinamic title)
+    </h1>
   `
 })
 export class TitleComponent {
   @Input({ required: true}) title!: string ;
-  @Input({ transform: booleanAttribute}) withShadow: boolean = false;
+  //@Input({ transform: booleanAttribute}) withShadow: boolean = false;
 }

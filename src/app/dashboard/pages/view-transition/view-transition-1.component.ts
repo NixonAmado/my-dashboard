@@ -9,7 +9,7 @@ import { TitleComponent } from '@shared/title/title.component';
     <app-title title="View Transition 1"/>
     <section class="flex justify-start ">    
       <div
-        class=" bg-blue-500 w-full relative z-10 h-dvh"
+        class=" bg-blue-500 w-full absolute z-10 h-dvh"
         style="view-transition-name:hero2"
         >
         <img srcset="https:picsum.photos/id/237/200/300"
